@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "j398damwhhwPySQJE+8esLK4rmMG5WObIHXgmTnf+iDi5ASXWiIzJgbo6s56wGFWMTQ3Rlwp6FNxuv4AGBxs0Q==",
+  "dgSpecHash": "BtW2byK2pOpXT4H8vbteCHAIE1Hc/UY66QJaEWF3JovduncEcmgSjdpat905vgV0gjRE9VlNMaEJbX9Z07RXWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\tunaa\\OneDrive\\Masaüstü\\ASP.Net Bootcamp TechCareer\\Basics\\Basics.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tunaa\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tunaa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tunaa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tunaa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

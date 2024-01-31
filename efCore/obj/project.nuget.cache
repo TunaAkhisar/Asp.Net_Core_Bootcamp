@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/F2cjmRMzCXiLfL++8hnlXNs9b7HC5Zhaq4lJI64ZpJ+J8VHqA+wkw8cRYdaBUxmsaE1aGR7I+F/DloZtQz+/Q==",
+  "dgSpecHash": "UnC9+KprkAlkAH7WkrNGe9H6U5GGCLRdaevPOE0zObuR6k3mmF33VpBitRBSFiLGPcA+XM9SPZIVXY24sYtR2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\tunaa\\OneDrive\\Masaüstü\\ASP.Net Bootcamp TechCareer\\efCore\\efCore.csproj",
   "expectedPackageFiles": [
@@ -53,7 +53,11 @@
     "C:\\Users\\tunaa\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\tunaa\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\tunaa\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\tunaa\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\tunaa\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\tunaa\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tunaa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tunaa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tunaa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,12 +1,12 @@
-@model Ogrenci
+@model Kurs
 
-<h2>Öğrenci Silme</h2>
+<h2>Kurs Silme</h2>
 <hr>
 <p>
-    <b>@Model.OgrenciAd @Model.OgrenciSoyad</b> isimli öğrenciyi silmek istiyor musun ?
+    <b>@Model.Baslik </b> isimli kursu silmek istiyor musun ?
 
     <form asp-action="Delete" method="post">
-        <input type="hidden" value="@Model.OgrenciId" name="id">
+        <input type="hidden" value="@Model.KursId" name="id">
         <button type="submit" class="btn btn-danger">Evet</button>
         <a asp-action="Index" class="btn btn-primary">Hayır</a>
     </form>

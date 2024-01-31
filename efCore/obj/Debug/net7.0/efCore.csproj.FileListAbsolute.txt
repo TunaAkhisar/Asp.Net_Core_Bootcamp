@@ -91,3 +91,4 @@ C:\Users\tunaa\OneDrive\Masaüstü\ASP.Net Bootcamp TechCareer\efCore\obj\Debug\
 C:\Users\tunaa\OneDrive\Masaüstü\ASP.Net Bootcamp TechCareer\efCore\obj\Debug\net7.0\efCore.pdb
 C:\Users\tunaa\OneDrive\Masaüstü\ASP.Net Bootcamp TechCareer\efCore\obj\Debug\net7.0\efCore.genruntimeconfig.cache
 C:\Users\tunaa\OneDrive\Masaüstü\ASP.Net Bootcamp TechCareer\efCore\obj\Debug\net7.0\ref\efCore.dll
+C:\Users\tunaa\OneDrive\Masaüstü\ASP.Net Bootcamp TechCareer\efCore\obj\Debug\net7.0\efCore.sourcelink.json
