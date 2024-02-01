@@ -1,6 +1,7 @@
 using efCore.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using efCore.Models;
 
 namespace efCore.Controllers
 {
@@ -20,7 +21,7 @@ namespace efCore.Controllers
 
         public async Task<IActionResult> Create(){
 
-            ViewBag.Ogretmenler = await SelectList( await _context.Ogretmenler.ToListAsync(),"OgretmenId","AdSoyad");
+            ViewBag.Ogretmenler = new SelectList( await _context.Ogretmenler.ToListAsync(),"OgretmenId","AdSoyad");
 
             return View();
         }
@@ -42,12 +43,19 @@ namespace efCore.Controllers
             .Kurslar
             .Include(k => k.KursKayitlari)
             .ThenInclude(k=>k.Ogrenci)
+            .Select(k => new KursViewModel(){
+                KursId = k.KursId,
+                Baslik = k.Baslik,
+                OgretmenId = k.OgretmenId,
+
+            })
             .FirstOrDefaultAsync(k=>k.KursId == id);
+
             if(kurs == null){
                 return NotFound();
             }
 
-            ViewBag.Ogretmenler = await SelectList( await _context.Ogretmenler.ToListAsync(),"OgretmenId","AdSoyad");
+            ViewBag.Ogretmenler = new SelectList( await _context.Ogretmenler.ToListAsync(),"OgretmenId","AdSoyad");
 
             return View(kurs);
         }
@@ -62,7 +70,11 @@ namespace efCore.Controllers
             if(ModelState.IsValid){
                 try
                 {
-                    _context.Update(new Kurs() KursId =  );
+                    _context.Update(new Kurs(){
+                        KursId = model.KursId, 
+                        Baslik = model.Baslik , 
+                        OgretmenId = model.OgretmenId
+                    });
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
