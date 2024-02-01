@@ -13,11 +13,15 @@ namespace efCore.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(){       
+        public async Task<IActionResult> Index(){    
+               
             return View(await _context.Kurslar.ToListAsync());
         }
 
-        public IActionResult Create(){
+        public async Task<IActionResult> Create(){
+
+            ViewBag.Ogretmenler = await SelectList( await _context.Ogretmenler.ToListAsync(),"OgretmenId","AdSoyad");
+
             return View();
         }
 
@@ -42,12 +46,15 @@ namespace efCore.Controllers
             if(kurs == null){
                 return NotFound();
             }
+
+            ViewBag.Ogretmenler = await SelectList( await _context.Ogretmenler.ToListAsync(),"OgretmenId","AdSoyad");
+
             return View(kurs);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Kurs model){
+        public async Task<IActionResult> Edit(int id, KursViewModel model){
             if(id != model.KursId){
                 return NotFound();
             }
@@ -55,7 +62,7 @@ namespace efCore.Controllers
             if(ModelState.IsValid){
                 try
                 {
-                    _context.Update(model);
+                    _context.Update(new Kurs() KursId =  );
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
